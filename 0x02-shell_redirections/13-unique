@@ -1,2 +1,2 @@
 #/bin/bash
-sort | uniq -u
+echo "$@" | tr ' ' '\n' | sort | uniq -u
