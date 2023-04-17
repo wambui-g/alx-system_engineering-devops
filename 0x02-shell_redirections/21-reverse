@@ -1,2 +1,2 @@
 #!/bin/bash
-rev input_file > output_file
+rev
