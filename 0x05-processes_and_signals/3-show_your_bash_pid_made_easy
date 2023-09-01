@@ -1,4 +1,4 @@
-#!/usr/binenv bash
+#!/usr/bin/env bash
 #filter all containing the word bash
 
 pgrep -l bash
