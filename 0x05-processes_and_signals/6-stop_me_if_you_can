@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#stops loop in 4 without kill
+
+pkill -15 "bash ./4-to_infinity_and_beyond" -f

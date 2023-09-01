@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#to infinity
+#different at SIGTERM
+
+#to handle -15
+trap "echo 'I am invincible!!!'" 15
+
+#infinity loop
+while true;
+do
+	echo "To infinity and beyond";
+	sleep 2
+done

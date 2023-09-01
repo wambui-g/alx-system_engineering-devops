@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#stops loop in 7 without kill
+
+pkill -15 "bash ./7-highlande" -f
