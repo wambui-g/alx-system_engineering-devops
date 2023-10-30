@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#kill loop in 7
+
+pkill -9 "bash ./7-highlander" -f

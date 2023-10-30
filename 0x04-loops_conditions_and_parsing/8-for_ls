@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#script that prints content of directorie
+
+content="$(ls -1)"
+for i in $content; do
+	echo "$i" | cut -d'-' -f2
+done
