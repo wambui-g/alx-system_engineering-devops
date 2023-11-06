@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Configures a new Ubuntu server with a custom HTTP header response
+apt-get -y update
+apt-get -y install nginx
+ufw allow 'Nginx HTTP'
+# Get the hostname
+hostname=$(hostname)
+
+# Add custom header configuration to Nginx using sed
+sudo sed -i "/http {/a \ \ \ \ add_header X-Served-By $hostname;" /etc/nginx/nginx.conf
+
+# Restart Nginx
+sudo service nginx restart
